@@ -46,6 +46,7 @@ module Artcli
         puts "Nothing to clean, filtered repositories empty"
         return
       end
+      client = Artifactory::Client.new(endpoint: @base_uri, username: @user, password: @passwd)
       storage_uris.each do| uri |
         if !dry_run
           puts "#{uri} will be deleted"
@@ -54,7 +55,6 @@ module Artcli
         else
           puts "dry run: #{uri} would be deleted"
         end
-
       end
     end
   end

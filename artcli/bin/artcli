@@ -1,0 +1,69 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+require 'slop'
+require 'json'
+require 'artcli'
+require 'pp'
+require 'apgsecrets'
+
+
+def help(opts)
+  puts "A Command Line Tool for interacting with Artifactory, Version: #{Artcli::VERSION} "
+  puts opts
+  puts 'The paramteers --user --password and --url need to be be before the functional parameters with arguments.'
+  puts 'Example: apscli -u xxx -p -l yum'
+end
+
+opts = Slop.parse do |o|
+  o.bool '-y', '--dry', 'Dry run, not executing the commands', default: false
+  o.string '-u', '--user', 'Admin user for artifactory operations, will be prompted for the password'
+  o.string '-r', '--uri', 'Base Artifactory URI, without https:// prefix. Default : artifactory4t4apgsga.jfrog.io/artifactory', default: 'artifactory4t4apgsga.jfrog.io/artifactory'
+  o.string '-l', '--list_local' , 'List Local Repositories matching a optional filter', default:  nil
+  o.string '-d', '--delete_local' , 'Delete content of  Local Repositories matching optional filter', default: nil
+  o.bool '-p' , '--password', 'Force prompt for password, normally password will be cached encrypted ', default: false
+  o.on '-h', '--help' do
+    help(o)
+    exit
+  end
+end
+# Test Preconditions
+unless opts[:user]
+  help(opts)
+  puts 'Error: Artifactory Admin user must be specificed with -u or --user'
+  exit
+end
+if !opts[:list_local] and opts[:deletelocal]
+  help(opts)
+  puts 'Error: At least one operation must be selected'
+  exit
+end
+
+# Establishment of Preconditions : Entering and Storing Password
+secrets = Secrets::Store.new
+secrets.prompt_only_when_not_exists(opts[:user], 'Enter artifactory password and enter return:')
+
+# Artifactory funcitionality
+command = Artcli::Cli.new(opts[:uri], opts[:user], secrets.retrieve(opts[:user]), opts[:dry])
+if opts[:list_local]
+  puts "Filtered Local Repositories for #{opts[:uri]} with filter: #{opts[:list_local]} "
+  pp command.list_repositories(opts[:list_local])
+end
+if opts[:delete_local]
+  puts "Filtered Local Repositories for #{opts[:uri]} with filter: #{opts[:delete_local]} "
+  selected_repos = command.list_repositories(opts[:delete_local])
+  puts "The following repos have been selected to be cleaned: #{selected_repos}"
+  ok = ask('Ok to proceed y/n: ')
+  if ok != 'y'
+    puts 'Processing is beeing terminated'
+    exit
+  end
+  storage_uris_to_deleted = command.list_storage_uris(selected_repos)
+  puts "The following storage uri's have been selected to be cleaned: #{storage_uris_to_deleted}"
+  ok = ask('Ok to proceed y/n: ')
+  if ok != 'y'
+    puts 'Processing is beeing terminated'
+    exit
+  end
+  pp command.clean_repositories(storage_uris_to_deleted)
+end
+puts 'Done.'

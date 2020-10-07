@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+source 'https://artifactory4t4apgsga.jfrog.io/artifactory/api/gems/apgGems' do
+  gem 'apgdb'
+  gem 'apgsecrets'
+end
+require 'slop'
+

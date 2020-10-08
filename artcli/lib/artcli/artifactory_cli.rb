@@ -70,14 +70,14 @@ module Artcli
         puts 'Processing is beeing terminated'
         exit
       end
-      storage_uris_to_deleted = command.list_storage_uris(selected_repos)
+      storage_uris_to_deleted = list_storage_uris(selected_repos)
       puts "The following storage uri's have been selected to be cleaned: #{storage_uris_to_deleted}"
       ok = ask('Ok to proceed y/n: ')
       if ok != 'y'
         puts 'Processing is beeing terminated'
         exit
       end
-      pp command.clean_repositories(storage_uris_to_deleted)
+      pp clean_repositories(storage_uris_to_deleted)
     end
   end
 end

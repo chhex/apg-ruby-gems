@@ -1,6 +1,6 @@
 require 'apscli/version'
 require 'java'
-require_relative './apg-patch-cli-fat-2.0.DEVD1.jar'
+require_relative './apg-patch-cli-fat.jar'
 # Wraooer
 module Apscli
   class Error < StandardError; end

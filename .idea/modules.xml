@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/apgdb/apgdb.iml" filepath="$PROJECT_DIR$/apgdb/apgdb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apgdbtests/apgdbtests.iml" filepath="$PROJECT_DIR$/apgdbtests/apgdbtests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apgsecrets/apgsecrets.iml" filepath="$PROJECT_DIR$/apgsecrets/apgsecrets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apscli/apscli.iml" filepath="$PROJECT_DIR$/apscli/apscli.iml" />
+      <module fileurl="file://$PROJECT_DIR$/artcli/artcli.iml" filepath="$PROJECT_DIR$/artcli/artcli.iml" />
+    </modules>
+  </component>
+</project>

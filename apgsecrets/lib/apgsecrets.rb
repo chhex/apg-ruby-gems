@@ -10,9 +10,9 @@ module Secrets
   class Store
     attr_reader :cache, :terminal
 
-    def initialize(expiry = 600, input = $stdin, output = $stdout)
+    def initialize(domain = 'credentials', expiry = 600, input = $stdin, output = $stdout)
       @terminal = HighLine.new(input, output)
-      @cache = FileCache.new("credentials", "#{Dir.tmpdir}/apgsecrets", 600, 1)
+      @cache = FileCache.new(domain, "#{Dir.tmpdir}/apgsecrets", expiry, 1)
     end
 
     def save(user, password)
@@ -38,7 +38,10 @@ module Secrets
     end
 
 
-    def prompt_only_when_not_exists(user, text)
+    def prompt_only_when_not_exists(user, text, force = false)
+      if force
+        return prompt_and_save(user,text)
+      end
       if exist(user)
         return retrieve(user)
       end

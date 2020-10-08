@@ -26,7 +26,7 @@ RSpec.describe Secrets do
     password = 'Somepassword'
     input << password << "\n"
     input.rewind
-    s = Secrets::Store.new(nil,input,output)
+    s = Secrets::Store.new('test',10,input,output)
     result = s.prompt('Some Display text')
     expect(result).to eq(password)
   end
@@ -37,7 +37,7 @@ RSpec.describe Secrets do
     password = 'Somepassword'
     input << password << "\n"
     input.rewind
-    s = Secrets::Store.new(nil,input,output)
+    s = Secrets::Store.new('test',10,input,output)
     result = s.prompt_and_save('yetanotheruser', 'Some Display text')
     expect(result).to eq(password)
     expect(s.exist('yetanotheruser')).to eq(true)
@@ -58,7 +58,7 @@ RSpec.describe Secrets do
     password = 'Somepassword'
     input << password << "\n"
     input.rewind
-    s = Secrets::Store.new(nil,input,output)
+    s = Secrets::Store.new('test',10,input,output)
     s.prompt_only_when_not_exists('yetanotheruserrrrrr', 'Some Display text')
     expect(s.exist('yetanotheruserrrrrr')).to eq(true)
     expect(s.retrieve('yetanotheruserrrrrr')).to eq('Somepassword')

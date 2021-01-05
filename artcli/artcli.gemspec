@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'slop',  '~> 4.8', '>= 4.8.2'
   spec.add_dependency  'highline',  '~> 2.0', '>= 2.0.1'
+  spec.add_dependency  'artifactory',  '~> 2.3', '>= 2.3.2'
   spec.add_dependency 'apgsecrets'
 
   # Specify which files should be added to the gem when it is released.f

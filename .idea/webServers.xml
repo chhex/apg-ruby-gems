@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4a660f2b-bd01-4acf-b5f6-1b84486ae8b4" name="che@centpatch">
+        <fileTransfer accessType="SFTP" host="centpatch" port="22" sshConfigId="7516c93c-856c-4316-b060-9e571e513d27" sshConfig="che@centpatch:22 agent" authAgent="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

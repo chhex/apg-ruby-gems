@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="OPEN_SSH" host="centpatch" id="7516c93c-856c-4316-b060-9e571e513d27" port="22" nameFormat="DESCRIPTIVE" username="che" />
+    </configs>
+  </component>
+</project>

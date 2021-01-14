@@ -19,5 +19,6 @@ module Apscli
     include_package 'com.apgsga.microservice.patch.api'
     java_import com.fasterxml.jackson.databind.ObjectMapper
     java_import com.google.common.collect.Lists
+    java_import java.io.File
   end
 end

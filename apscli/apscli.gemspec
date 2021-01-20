@@ -2,7 +2,7 @@ require_relative 'lib/apscli/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "apscli"
-  spec.version       = Apscli::VERSION
+  spec.version       = Aps::VERSION
   spec.authors       = ["Christoph Henrici"]
   spec.email         = ["chhenrici@gmail.com"]
 

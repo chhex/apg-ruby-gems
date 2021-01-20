@@ -2,4 +2,4 @@
 # encoding: utf-8
 #
 require 'apscli'
-Apscli.run(ARGV)
+Aps::Cli.run(ARGV)

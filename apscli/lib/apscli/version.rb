@@ -1,3 +1,3 @@
-module Apscli
-  VERSION = '0.2.4'
+module Aps
+  VERSION = '0.8.0'
 end

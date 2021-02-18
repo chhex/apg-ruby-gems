@@ -4,14 +4,13 @@ module Secrets
   require 'openssl'
   require 'tmpdir'
   require 'filecache'
-  require 'readline'
-  require 'highline/import'
 
   class Store
-    attr_reader :cache, :terminal
+    attr_reader :cache, :input, :output
 
     def initialize(domain = 'credentials', expiry = 600, input = $stdin, output = $stdout)
-      @terminal = HighLine.new(input, output)
+      @input = input
+      @output = output
       @cache = FileCache.new(domain, "#{Dir.tmpdir}/apgsecrets", expiry, 1)
     end
 
@@ -20,19 +19,17 @@ module Secrets
     end
 
     def prompt(text)
-      if @terminal.input.tty?
-        @terminal.ask("#{text}") { |q| q.echo = false }
+      @output.print("#{text}")
+      if @input.tty?
+        inp = @input.noecho(&:gets)
       else
-        @terminal.ask("#{text}")
+        inp = @input.gets
       end
+      inp.strip!
     end
 
     def prompt_and_save(user, text)
-      pw = if @terminal.input.tty?
-             @terminal.ask("#{text}") { |q| q.echo = false }
-           else
-             @terminal.ask("#{text}")
-           end
+      pw = prompt(text)
       save(user, pw)
       pw
     end
@@ -56,7 +53,6 @@ module Secrets
 
     def retrieve(user)
       raise Secrets::SecretsError, "User #{user} has not been saved" if !exist(user)
-
       c = @cache.get(user)
       decrypt(c)
     end

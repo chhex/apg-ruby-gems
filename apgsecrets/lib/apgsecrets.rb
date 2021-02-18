@@ -4,6 +4,7 @@ module Secrets
   require 'openssl'
   require 'tmpdir'
   require 'filecache'
+  require 'io/console'
 
   class Store
     attr_reader :cache, :input, :output

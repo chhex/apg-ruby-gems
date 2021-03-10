@@ -1,0 +1,82 @@
+{
+  "patchNumber": "7467",
+  "developerBranch": "",
+  "tagNr": 4,
+  "dbPatch": {
+    "dbPatchBranch": "Ms_patch_7467",
+    "prodBranch": "prod",
+    "patchTag": "Ms_patch_7467_4",
+    "dbObjects": [
+      {
+        "fileName": "org.eclipse.core.resources.prefs",
+        "filePath": "com.affichage.it21.masterdaten.zo/.settings/",
+        "moduleName": "com.affichage.it21.masterdaten.zo",
+        "hasConflict": false
+      },
+      {
+        "fileName": "org.eclipse.core.resources.prefs",
+        "filePath": "com.affichage.it21.masterdaten.aenv/.settings/",
+        "moduleName": "com.affichage.it21.masterdaten.aenv",
+        "hasConflict": false
+      },
+      {
+        "fileName": "arep.ds.xml",
+        "filePath": "com.affichage.it21.masterdaten.arep/src/main/sql/",
+        "moduleName": "com.affichage.it21.masterdaten.arep",
+        "hasConflict": false
+      },
+      {
+        "fileName": "aenv.pz.xml",
+        "filePath": "com.affichage.it21.masterdaten.aenv/src/main/sql/",
+        "moduleName": "com.affichage.it21.masterdaten.aenv",
+        "hasConflict": false
+      },
+      {
+        "fileName": "zo.sche_xsell.xml",
+        "filePath": "com.affichage.it21.masterdaten.zo/src/main/sql/",
+        "moduleName": "com.affichage.it21.masterdaten.zo",
+        "hasConflict": false
+      },
+      {
+        "fileName": "zo.sche_ifib.xml",
+        "filePath": "com.affichage.it21.masterdaten.zo/src/main/sql/",
+        "moduleName": "com.affichage.it21.masterdaten.zo",
+        "hasConflict": false
+      },
+      {
+        "fileName": "arep.xsell.xml",
+        "filePath": "com.affichage.it21.masterdaten.arep/src/main/sql/",
+        "moduleName": "com.affichage.it21.masterdaten.arep",
+        "hasConflict": false
+      },
+      {
+        "fileName": "dbj.pe.xml",
+        "filePath": "com.affichage.it21.masterdaten.dbj/src/main/sql/",
+        "moduleName": "com.affichage.it21.masterdaten.dbj",
+        "hasConflict": false
+      },
+      {
+        "fileName": "prad.prad_log_pa.pkb.sql",
+        "filePath": "com.affichage.it21.prad.sql/src/main/sql/package/",
+        "moduleName": "com.affichage.it21.prad.sql",
+        "hasConflict": false
+      },
+      {
+        "fileName": "aenv.pend.xml",
+        "filePath": "com.affichage.it21.masterdaten.aenv/src/main/sql/",
+        "moduleName": "com.affichage.it21.masterdaten.aenv",
+        "hasConflict": false
+      },
+      {
+        "fileName": "org.eclipse.core.resources.prefs",
+        "filePath": "com.affichage.it21.masterdaten.arep/.settings/",
+        "moduleName": "com.affichage.it21.masterdaten.arep",
+        "hasConflict": false
+      }
+    ]
+  },
+  "dockerServices": [
+    "geocoder-service"
+  ],
+  "services": []
+}

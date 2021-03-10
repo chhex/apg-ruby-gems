@@ -1,0 +1,115 @@
+{
+  "className": "com.apgsga.microservice.patch.api.impl.PatchBean",
+  "patchNummer": "7472",
+  "serviceName": "It21Ui",
+  "microServiceBranch": "it21_release_9_1_1_admin_uimig",
+  "dbPatchBranch": "patch_7472",
+  "prodBranch": "prod",
+  "patchTag": "patch_7472_1",
+  "developerBranch": "",
+  "tagNr": 1,
+  "installationTarget": null,
+  "targetToState": "AnwendertestInstallationsbereit",
+  "baseVersionNumber": "9.1.0",
+  "revisionMnemoPart": "ADMIN-UIMIG",
+  "revision": "21321",
+  "lastRevision": "9.1.0.ADMIN-UIMIG-21319",
+  "runningNr": null,
+  "dbObjects": [
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "lo.lo_unterhalt_f_pa.pkb.sql",
+      "filePath": "com.affichage.it21.lo.sql/src/main/sql/package/",
+      "moduleName": "com.affichage.it21.lo.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "lo.lo_unterhalt_f_pa.pks.sql",
+      "filePath": "com.affichage.it21.lo.sql/src/main/sql/package/",
+      "moduleName": "com.affichage.it21.lo.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "lo.lo_unterhalt_v_pa.pkb.sql",
+      "filePath": "com.affichage.it21.lo.sql/src/main/sql/package/",
+      "moduleName": "com.affichage.it21.lo.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "lo.lo_unterhalt_v_pa.pks.sql",
+      "filePath": "com.affichage.it21.lo.sql/src/main/sql/package/",
+      "moduleName": "com.affichage.it21.lo.sql"
+    }
+  ],
+  "mavenArtifacts": [
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.MavenArtifactBean",
+      "artifactId": "aushang-ui",
+      "groupId": "com.affichage.it21.lo",
+      "name": "com.affichage.it21.lo.aushang.ui",
+      "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+      "dependencyLevel": 0
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.MavenArtifactBean",
+      "artifactId": "lo-dao",
+      "groupId": "com.affichage.it21.lo",
+      "name": "com.affichage.it21.lo.dao",
+      "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+      "dependencyLevel": 1
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.MavenArtifactBean",
+      "artifactId": "abwicklung-ui",
+      "groupId": "com.affichage.it21.lo",
+      "name": "com.affichage.it21.lo.abwicklung.ui",
+      "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+      "dependencyLevel": 0
+    }
+  ],
+  "dockerServices": [],
+  "installDockerServices": false,
+  "installOnEmptyModules": false,
+  "lastPipelineTask": "Notification",
+  "currentTarget": "CHTI211",
+  "currentPipelineTask": "Approve",
+  "logText": "started",
+  "mavenArtifactsToBuild": [
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.MavenArtifactBean",
+      "artifactId": "aushang-ui",
+      "groupId": "com.affichage.it21.lo",
+      "name": "com.affichage.it21.lo.aushang.ui",
+      "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+      "dependencyLevel": 0
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.MavenArtifactBean",
+      "artifactId": "lo-dao",
+      "groupId": "com.affichage.it21.lo",
+      "name": "com.affichage.it21.lo.dao",
+      "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+      "dependencyLevel": 1
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.MavenArtifactBean",
+      "artifactId": "abwicklung-ui",
+      "groupId": "com.affichage.it21.lo",
+      "name": "com.affichage.it21.lo.abwicklung.ui",
+      "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+      "dependencyLevel": 0
+    }
+  ],
+  "installJadasAndGui": true,
+  "dbObjectsAsVcsPath": [
+    "com.affichage.it21.lo.sql/src/main/sql/package//lo.lo_unterhalt_f_pa.pkb.sql",
+    "com.affichage.it21.lo.sql/src/main/sql/package//lo.lo_unterhalt_f_pa.pks.sql",
+    "com.affichage.it21.lo.sql/src/main/sql/package//lo.lo_unterhalt_v_pa.pkb.sql",
+    "com.affichage.it21.lo.sql/src/main/sql/package//lo.lo_unterhalt_v_pa.pks.sql"
+  ],
+  "mavenArtifactsAsVcsPath": [
+    "com.affichage.it21.lo.aushang.ui",
+    "com.affichage.it21.lo.dao",
+    "com.affichage.it21.lo.abwicklung.ui"
+  ]
+}

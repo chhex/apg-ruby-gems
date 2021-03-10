@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="First Iteration Patch Json Migration for Multiservice_cm">
-      <change beforePath="$PROJECT_DIR$/apscli/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apscli/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apsmig/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apsmig/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apsmig/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Fix wrong update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -149,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614780694539</updated>
       <workItem from="1614780697299" duration="438000" />
-      <workItem from="1615372129782" duration="15739000" />
+      <workItem from="1615372129782" duration="16243000" />
     </task>
     <task id="LOCAL-00001" summary="Bumped new version of apg-patch-cli-fat.jar">
       <created>1614781000865</created>
@@ -172,7 +166,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615391778879</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Info stuff">
+      <created>1615392184332</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615392184332</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix wrong update">
+      <created>1615392282590</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615392282590</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,7 +201,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bumped new version of apg-patch-cli-fat.jar" />
     <MESSAGE value="First Iteration Patch Json Migration for Multiservice_cm" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Iteration Patch Json Migration for Multiservice_cm" />
+    <MESSAGE value="Info stuff" />
+    <MESSAGE value="Fix wrong update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix wrong update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/apg_ruby_gems@Apsmig.rcov" NAME="Apsmig Coverage Results" MODIFIED="1615389969959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apsmig" MODULE_NAME="apsmig" />

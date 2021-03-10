@@ -5,31 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="First Iteration Patch Json Migration for Multiservice_cm">
-      <change afterPath="$PROJECT_DIR$/apsmig/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/.rspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/CODE_OF_CONDUCT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/Rakefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/apsmig.gemspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/apsmig.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/bin/apsmig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/lib/apsmig.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/lib/apsmig/version.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/spec/apsmig_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/spec/spec_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7464.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7465.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7472.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7473.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/target/Patch7465.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/target/Patch7466.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/target/Patch7467.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apg-ruby-gems.iws" beforeDir="false" afterPath="$PROJECT_DIR$/apg-ruby-gems.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apsmig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcli/spec/artcli_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/spec/artcli_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apscli/CODE_OF_CONDUCT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apscli/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/CODE_OF_CONDUCT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +149,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614780694539</updated>
       <workItem from="1614780697299" duration="438000" />
-      <workItem from="1615372129782" duration="15393000" />
+      <workItem from="1615372129782" duration="15739000" />
     </task>
     <task id="LOCAL-00001" summary="Bumped new version of apg-patch-cli-fat.jar">
       <created>1614781000865</created>
@@ -185,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615390042512</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First Iteration Patch Json Migration for Multiservice_cm">
+      <created>1615391778879</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615391778879</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

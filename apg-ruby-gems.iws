@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Bumped new version of apg-patch-cli-fat.jar">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/piper-patch-mig.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apg-ruby-gems.ipr" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apg-ruby-gems.iws" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/.rspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/Gemfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/Rakefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/apsmig.gemspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/apsmig.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/bin/apsmig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/lib/apsmig.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/lib/apsmig/version.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/spec/apsmig_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/spec/spec_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7464.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7465.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7472.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7473.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/testdata/target/Patch7465.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/testdata/target/Patch7466.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apsmig/testdata/target/Patch7467.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apgsecrets/apgsecrets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/apgsecrets/apgsecrets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apscli/apscli.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/apscli/apscli.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apscli/apscli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/apscli/apscli.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apscli/lib/apscli.rb" beforeDir="false" afterPath="$PROJECT_DIR$/apscli/lib/apscli.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcli/artcli.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/artcli.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcli/artcli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/artcli.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/piper-patch-mig">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/piper-patch-mig">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="piper-patch-mig" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="piper-patch-mig" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/apsmig" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="ProjectId" id="1pFZFLJCIz9eDHSCxhwnYx0cosf" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/apscli/lib" />
+    </key>
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$" />
+        <option value="$PROJECT_DIR$/apscli" />
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Apsmig" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="apsmig" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/apsmig" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov" IGNORE_RCOVRT="true" ENABLE_BRANCH_COVERAGE="true" ENABLE_FORKED_COVERAGE="true">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.rails.run.RailsRunConfigurationExtension" SCRATCH_USE_RAILS_RUNNER="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/apsmig/spec/apsmig_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Apsmig" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="RSpec.Apsmig" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="" />
+      <created>1614780694539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614780694539</updated>
+      <workItem from="1614780697299" duration="438000" />
+      <workItem from="1615372129782" duration="13736000" />
+    </task>
+    <task id="LOCAL-00001" summary="Bumped new version of apg-patch-cli-fat.jar">
+      <created>1614781000865</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614781000865</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Bumped new version of apg-patch-cli-fat.jar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bumped new version of apg-patch-cli-fat.jar" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/apg_ruby_gems@Apsmig.rcov" NAME="Apsmig Coverage Results" MODIFIED="1615389942212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apsmig" MODULE_NAME="apsmig" />
+  </component>
+</project>

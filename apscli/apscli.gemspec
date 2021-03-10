@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "https://artifactory4t4apgsga.jfrog.io/artifactory/api/gems/apgGems"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/apgsga-it/apscli.git"
+  spec.metadata["source_code_uri"] = "https://github.com/apg-ruby-gems.git"
 
   spec.files = Dir[ 'lib/**/*' ,'Gemfile',  '*.gemspec']
   spec.bindir        = "bin"

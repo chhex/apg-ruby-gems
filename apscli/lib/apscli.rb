@@ -37,7 +37,7 @@ module Aps
       return makeMapper().writerWithDefaultPrettyPrinter().writeValueAsString(obj)
     end
     def self.asJsonFile(obj,file_name)
-      json = makeMapper().writerWithDefaultPrettyPrinter().writeValueAsString(obj)
+      json = makeMapper(). ().writeValueAsString(obj)
       fl = makeFile(file_name)
       FileUtils.writeStringToFile(fl,json)
     end

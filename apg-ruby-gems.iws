@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Bumped new version of apg-patch-cli-fat.jar">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/piper-patch-mig.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apg-ruby-gems.ipr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apg-ruby-gems.iws" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/.rspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/.travis.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/CODE_OF_CONDUCT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/Gemfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/LICENSE.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/Rakefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/apsmig.gemspec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/apsmig.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/bin/apsmig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/lib/apsmig.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/lib/apsmig/version.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/spec/apsmig_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/spec/spec_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7464.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7465.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7472.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/old/Patch7473.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/target/Patch7465.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/target/Patch7466.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apsmig/testdata/target/Patch7467.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apgsecrets/apgsecrets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/apgsecrets/apgsecrets.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apscli/apscli.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/apscli/apscli.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apscli/apscli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/apscli/apscli.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apscli/lib/apscli.rb" beforeDir="false" afterPath="$PROJECT_DIR$/apscli/lib/apscli.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcli/artcli.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/artcli.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcli/artcli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/artcli.iml" afterDir="false" />
-    </list>
+    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="First Iteration Patch Json Migration for Multiservice_cm" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1614780694539</updated>
       <workItem from="1614780697299" duration="438000" />
-      <workItem from="1615372129782" duration="13736000" />
+      <workItem from="1615372129782" duration="14082000" />
     </task>
     <task id="LOCAL-00001" summary="Bumped new version of apg-patch-cli-fat.jar">
       <created>1614781000865</created>
@@ -184,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614781000865</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First Iteration Patch Json Migration for Multiservice_cm">
+      <created>1615390042512</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615390042512</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,9 +179,10 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Bumped new version of apg-patch-cli-fat.jar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bumped new version of apg-patch-cli-fat.jar" />
+    <MESSAGE value="First Iteration Patch Json Migration for Multiservice_cm" />
+    <option name="LAST_COMMIT_MESSAGE" value="First Iteration Patch Json Migration for Multiservice_cm" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/apg_ruby_gems@Apsmig.rcov" NAME="Apsmig Coverage Results" MODIFIED="1615389942212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apsmig" MODULE_NAME="apsmig" />
+    <SUITE FILE_PATH="coverage/apg_ruby_gems@Apsmig.rcov" NAME="Apsmig Coverage Results" MODIFIED="1615389969959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apsmig" MODULE_NAME="apsmig" />
   </component>
 </project>

@@ -5,8 +5,8 @@ require 'slop'
 require 'tty-spinner'
 
 opts = Slop.parse do |o|
-  o.string '-s', '--sourceDir', 'Source Dir Path  from which all Patch*.json Files are read'
-  o.string '-t', '--targetDir', 'Target Dirf Path to which the migrated Patch*.json Files are written'
+  o.string '-s', '--sourceDir', 'Source Dir Path from which all Patch[0-9]*.json Files are read'
+  o.string '-t', '--targetDir', 'Target Dir Path to which the migrated Patch*.json Files are written'
   o.on '-h', '--help' do
     puts o
     exit

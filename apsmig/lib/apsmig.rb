@@ -6,16 +6,14 @@ module Apsmig
 
   class PatchMigratorFactory
     def self.migrate(patchJson)
-      puts "Migrating from : #{JSON.pretty_generate(patchJson)}"
-      patch = migratePatch(patchJson)
-      puts "To: #{patch.toString()}"
-      patch
+      migratePatch(patchJson)
     end
     def self.migratePatch(from)
       Aps::Api::Patch
         .builder()
         .patchNumber(from["patchNummer"])
         .tagNr(from["tagNr"])
+        .developerBranch(from["developerBranch"])
         .dockerServices(migrateDockerServices(from))
         .dbPatch(migrateDbPatch(from))
         .services(migrateService(from)).build()
@@ -67,10 +65,35 @@ module Apsmig
       list
     end
     def self.migrateDockerServices(from)
+      if !from["dockerServices"]
+        return Aps::Api::Lists.newArrayList()
+      end
       Aps::Api::Lists.newArrayList(from["dockerServices"])
     end
   end
   class MigrationRequest
-
+    attr_reader :target_folder,:source_folder
+    def initialize(source_folder,target_folder)
+      @target_folder = target_folder
+      @source_folder = source_folder
+    end
+    def execute
+      raise "Source Folder <#{@source_folder}> is not a directory" if !File.directory?(@source_folder)
+      raise "Target Folder <#{@target_folder}> is not a directory" if !File.directory?(@target_folder)
+      raise "Source Folder <#{@source_folder}> is not readable" if !File.readable?(@source_folder)
+      raise "Target Folder <#{@target_folder}> is not writeable" if !File.writable?(@target_folder)
+      file_cnt = 0
+      Dir.glob("Patch[0-9]*.json", base: @source_folder) do |filename|
+        puts "Processing file: #{filename} in directory: #{@source_folder}"
+        file_content = File.read(File.join(@source_folder,filename))
+        patch = Apsmig::PatchMigratorFactory::migrate(JSON.parse(file_content))
+        target_file = File.join(@target_folder,filename)
+        File.write(target_file , Aps::Api::asJsonString(patch))
+        file_cnt += 1
+        puts "Migrated and written file: #{target_file}"
+      end
+      puts "Number of files processed <#{file_cnt}>"
+      file_cnt
+    end
   end
 end

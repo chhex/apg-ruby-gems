@@ -6,7 +6,7 @@
   "dbPatchBranch": "patch_7465",
   "prodBranch": "prod",
   "patchTag": "patch_7465_1",
-  "developerBranch": "",
+  "developerBranch": "test",
   "tagNr": 1,
   "installationTarget": null,
   "targetToState": "Produktion",

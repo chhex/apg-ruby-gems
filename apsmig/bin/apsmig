@@ -1,3 +1,44 @@
 #!/usr/bin/env ruby
 
 require "apsmig"
+require 'slop'
+require 'tty-spinner'
+
+opts = Slop.parse do |o|
+  o.string '-s', '--sourceDir', 'Source Dir Path  from which all Patch*.json Files are read'
+  o.string '-t', '--targetDir', 'Target Dirf Path to which the migrated Patch*.json Files are written'
+  o.on '-h', '--help' do
+    puts o
+    exit
+  end
+  o.on '--version', 'Print the version' do
+    puts Apsmig::VERSION
+    exit
+  end
+end
+
+# Preconditions
+if !opts[:sourceDir] or !opts[:targetDir]
+  puts "Required Directory options missing"
+  puts opts
+  exit
+end
+if !File.exist?(opts[:sourceDir]) || !File.directory?(opts[:sourceDir]) || !File.readable?(opts[:sourceDir])
+  puts "The Source Directory #{opts[:sourceDir]} either does not exist, isn't a directory or is not readable by you"
+  puts opts
+  exit
+end
+if !File.exist?(opts[:targetDir]) || !File.directory?(opts[:targetDir]) || !File.writable?(opts[:targetDir])
+  puts "The Target Directory #{opts[:targetDir]} either does not exist, isn't a directory or is not writable? by you"
+  puts opts
+  exit
+end
+
+request = Apsmig::MigrationRequest.new(opts[:sourceDir], opts[:targetDir])
+spinner = TTY::Spinner.new("[:spinner] :title", format: 'classic', hide_cursor: true)
+spinner.update(title: "Migrating all Patch*.json files in #{opts[:sourceDir]} to #{opts[:targetDir]}")
+spinner.auto_spin
+spinner.run "Done." do
+  nr_of_files = request.execute
+  puts "Processed #{nr_of_files} of Patch Files."
+end

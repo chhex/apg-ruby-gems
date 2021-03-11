@@ -1,3 +1,3 @@
 module Apsmig
-  VERSION = "0.1.6"
+  VERSION = "0.2.4"
 end

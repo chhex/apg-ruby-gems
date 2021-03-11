@@ -38,7 +38,8 @@ request = Apsmig::MigrationRequest.new(opts[:sourceDir], opts[:targetDir])
 spinner = TTY::Spinner.new("[:spinner] :title", format: 'classic', hide_cursor: true)
 spinner.update(title: "Migrating all Patch*.json files in #{opts[:sourceDir]} to #{opts[:targetDir]}")
 spinner.auto_spin
-spinner.run "Done." do
+spinner.run "Done." do |spinner|
   nr_of_files = request.execute
-  puts "Processed #{nr_of_files} of Patch Files."
+  spinner.success("finished, processed #{nr_of_files} of Patch Files.")
 end
+

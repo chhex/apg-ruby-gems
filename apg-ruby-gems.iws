@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Fix wrong update" />
+    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Fix Intellij Files">
+      <change beforePath="$PROJECT_DIR$/apg-ruby-gems.iws" beforeDir="false" afterPath="$PROJECT_DIR$/apg-ruby-gems.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apgdb/apgdb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/apgdb/apgdb.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apgdbtests/apgdbtests.iml" beforeDir="false" afterPath="$PROJECT_DIR$/apgdbtests/apgdbtests.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/lib/apsmig.rb" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/lib/apsmig.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/spec/apsmig_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/spec/apsmig_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/testdata/old/Patch7464.json" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/testdata/migrate/Patch7464.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/testdata/old/Patch7465.json" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/testdata/migrate/Patch7465.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/testdata/old/Patch7472.json" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/testdata/migrate/Patch7472.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/testdata/old/Patch7473.json" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/testdata/migrate/Patch7473.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +75,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/apsmig/testdata/output/Patch7464.json" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -143,7 +155,9 @@
       <option name="presentableId" value="Default" />
       <updated>1614780694539</updated>
       <workItem from="1614780697299" duration="438000" />
-      <workItem from="1615372129782" duration="16243000" />
+      <workItem from="1615372129782" duration="16767000" />
+      <workItem from="1615449297588" duration="112000" />
+      <workItem from="1615449445596" duration="4925000" />
     </task>
     <task id="LOCAL-00001" summary="Bumped new version of apg-patch-cli-fat.jar">
       <created>1614781000865</created>
@@ -180,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615392282590</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix Intellij Files">
+      <created>1615392785629</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615392785629</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,9 +224,24 @@
     <MESSAGE value="First Iteration Patch Json Migration for Multiservice_cm" />
     <MESSAGE value="Info stuff" />
     <MESSAGE value="Fix wrong update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix wrong update" />
+    <MESSAGE value="Fix Intellij Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix Intellij Files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/apsmig/spec/apsmig_spec.rb</url>
+          <line>11</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/apg_ruby_gems@Apsmig.rcov" NAME="Apsmig Coverage Results" MODIFIED="1615389969959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apsmig" MODULE_NAME="apsmig" />
+    <SUITE FILE_PATH="coverage/apg_ruby_gems@Apsmig.rcov" NAME="Apsmig Coverage Results" MODIFIED="1615454871079" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apsmig" MODULE_NAME="apsmig" />
   </component>
 </project>

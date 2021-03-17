@@ -29,7 +29,7 @@ RSpec.describe Apsmig do
     expect(dbObject.fileName).to eq("arep.vk.xml")
     expect(dbObject.filePath).to eq("com.affichage.it21.masterdaten.arep/src/main/sql/")
     expect(dbObject.moduleName).to eq("com.affichage.it21.masterdaten.arep")
-    expect(dbObject.hasConflict).to eq(false) # TODO (jhe, uge 11.3) : verify
+    expect(dbObject.hasConflict).to eq(false)
     expect(patch.dockerServices).to be_empty
     expect(patch.services).not_to be_empty
     expect(patch.services.size()).to eq(1)
@@ -37,7 +37,7 @@ RSpec.describe Apsmig do
     expect(service)
     expect(service.serviceName).to eq("it21")
     expect(service.patchTag).to eq("patch_7464_3")
-    expect(service.serviceMetaData).to be_nil  # TODO (jhe, uge, che 11.3) : verify
+    expect(service.serviceMetaData)
     expect(service.artifactsToPatch).not_to be_empty
     expect(service.artifactsToPatch.size()).to eq(1)
     artifact = service.artifactsToPatch.first
@@ -70,7 +70,31 @@ RSpec.describe Apsmig do
     expect(service)
     expect(service.serviceName).to eq("it21")
     expect(service.patchTag).to eq("patch_7465_1")
-    expect(service.serviceMetaData).to be_nil  # TODO (jhe, uge, che 11.3) : verify
+    expect(service.serviceMetaData)
+    serviceMetaData = service.serviceMetaData
+    expect(serviceMetaData.serviceName).to eq("it21")
+    expect(serviceMetaData.revisionPkgName).to eq("it21-ui-pkgs/revision")
+    expect(serviceMetaData.microServiceBranch).to eq("it21_release_9_1_1_admin_uimig")
+    expect(serviceMetaData.baseVersionNumber).to eq("9.1.0")
+    expect(serviceMetaData.revisionMnemoPart).to eq("ADMIN-UIMIG")
+    expect(serviceMetaData.bomCoordinates)
+    bomCoordinates = serviceMetaData.bomCoordinates
+    expect(bomCoordinates.artifactId).to eq("dm-bom")
+    expect(bomCoordinates.groupId).to eq("com.affichage.common.maven")
+    expect(bomCoordinates.name).to eq("_dm_bom")
+    expect(bomCoordinates.version).to eq("9.1.0.ADMIN-UIMIG-SNAPSHOT")
+    expect(bomCoordinates.dependencyLevel).to eq 0
+    expect(serviceMetaData.packages)
+    expect(serviceMetaData.packages).not_to be_empty
+    expect(serviceMetaData.packages.size()).to eq(2)
+    pkgUi = serviceMetaData.packages.first
+    expect(pkgUi.packagerName).to eq("it21-ui-pkgs/ui")
+    expect(pkgUi.pkgServiceName).to eq("it21-ui")
+    expect(pkgUi.starterCoordinates.size()).to eq(6)
+    pkgJadas = serviceMetaData.packages.last
+    expect(pkgJadas.packagerName).to eq("it21-ui-pkgs/server")
+    expect(pkgJadas.pkgServiceName).to eq("jadas")
+    expect(pkgJadas.starterCoordinates.size()).to eq(2)
     expect(service.artifactsToPatch).not_to be_empty
     expect(service.artifactsToPatch.size()).to eq(15)
     ordered_artifacts = service.artifactsToPatch.sort_by(&:dependencyLevel).reverse

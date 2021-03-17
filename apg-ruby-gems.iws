@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="README.MD">
+    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Service Metadata">
       <change beforePath="$PROJECT_DIR$/apg-ruby-gems.iws" beforeDir="false" afterPath="$PROJECT_DIR$/apg-ruby-gems.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apgsecrets/apgsecrets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/apgsecrets/apgsecrets.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/apsmig.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/apsmig.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/apsmig.iml" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/apsmig.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/lib/apsmig.rb" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/lib/apsmig.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/lib/apsmig/version.rb" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/lib/apsmig/version.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apsmig/spec/apsmig_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/apsmig/spec/apsmig_spec.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,6 +237,8 @@
       <workItem from="1615372129782" duration="16767000" />
       <workItem from="1615449297588" duration="112000" />
       <workItem from="1615449445596" duration="20634000" />
+      <workItem from="1615902406268" duration="368000" />
+      <workItem from="1615954180092" duration="3679000" />
     </task>
     <task id="LOCAL-00001" summary="Bumped new version of apg-patch-cli-fat.jar">
       <created>1614781000865</created>
@@ -338,7 +346,8 @@
     <MESSAGE value="Logging" />
     <MESSAGE value="Spinner logging enhancement" />
     <MESSAGE value="README.MD" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.MD" />
+    <MESSAGE value="Service Metadata" />
+    <option name="LAST_COMMIT_MESSAGE" value="Service Metadata" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

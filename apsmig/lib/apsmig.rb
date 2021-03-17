@@ -47,6 +47,7 @@ module Apsmig
                   .serviceName("it21")
                   .patchTag(from["patchTag"])
                   .artifactsToPatch(migrateMavenArtifacts(from))
+                  .serviceMetaData(migrateServiceMetaInfo())
                   .build()
       Aps::Api::Lists.newArrayList(service)
     end
@@ -70,6 +71,48 @@ module Apsmig
       end
       Aps::Api::Lists.newArrayList(from["dockerServices"])
     end
+    def self.migrateServiceMetaInfo
+      pkgs = Aps::Api::Lists.newArrayList()
+      pkgs.add(Aps::Api::Package
+                 .builder()
+                 .pkgServiceName("it21-ui")
+                 .packagerName("it21-ui-pkgs/ui")
+                 .starterCoordinates(Aps::Api::Lists.newArrayList(
+                   "com.affichage.it21.ui:it21-ui-runtime",
+                   "com.apgsga.it21.ui.mdt:it21ui-app-starter",
+                   "com.apgsga.it21.ui.mdt:javaforms-starter",
+                   "com.apgsga.it21:lasttests-jfmt",
+                   "org.springframework.boot:spring-boot-starter-tomcat",
+                   "moyosoft:moyocore_x64:3.0.4:@dll"
+                 ))
+                 .build())
+      pkgs.add(Aps::Api::Package
+                .builder()
+                .pkgServiceName("jadas")
+                .packagerName("it21-ui-pkgs/server")
+                .starterCoordinates(Aps::Api::Lists.newArrayList(
+                  "com.apgsga.it21.ui.mdt:jadas-app-starter",
+                  "com.apgsga.it21.ui.mdt:jadas-framework-starter"
+                 ))
+                .build())
+      bomCoordinates = Aps::Api::MavenArtifact
+                   .builder()
+                   .artifactId("dm-bom")
+                   .groupId("com.affichage.common.maven")
+                   .name("_dm_bom")
+                   .version("9.1.0.ADMIN-UIMIG-SNAPSHOT").build()
+     Aps::Api::ServiceMetaData
+                  .builder()
+                  .serviceName("it21")
+                  .revisionPkgName("it21-ui-pkgs/revision")
+                  .microServiceBranch("it21_release_9_1_1_admin_uimig")
+                  .baseVersionNumber("9.1.0")
+                  .revisionMnemoPart("ADMIN-UIMIG")
+                  .bomCoordinates(bomCoordinates)
+                  .packages(pkgs)
+                  .build()
+
+    end
   end
   class MigrationRequest
     attr_reader :target_folder,:source_folder
@@ -80,7 +123,7 @@ module Apsmig
     def execute
       raise "Source Folder <#{@source_folder}> is not a directory" if !File.directory?(@source_folder)
       raise "Target Folder <#{@target_folder}> is not a directory" if !File.directory?(@target_folder)
-      raise "Source Folder <#{@source_folder}> is not readable" if !File.readable?(@source_folder)
+      raise "Source Folder <#{@sourcdce_folder}> is not readable" if !File.readable?(@source_folder)
       raise "Target Folder <#{@target_folder}> is not writeable" if !File.writable?(@target_folder)
       file_cnt = 0
       Dir.glob("Patch[0-9]*.json", base: @source_folder) do |filename|

@@ -15,7 +15,8 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.10.2, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.10.2, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="slop (v4.8.2, rbenv: jruby-9.2.11.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="spinner (v1.0.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tty-cursor (v0.7.1, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tty-spinner (v0.9.3, rbenv: jruby-9.2.11.1) [gem]" level="application" />
   </component>
   <component name="RakeTasksCache">
     <option name="myRootTask">

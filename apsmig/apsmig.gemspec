@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'slop',  '~> 4.8', '>= 4.8.2'
   spec.add_dependency 'apscli',  '~> 0.8', '>= 0.8.2'
-  spec.add_dependency 'spinner'
+  spec.add_dependency 'tty-spinner'
 
   spec.files = Dir[ 'lib/**/*' ,'Gemfile',  '*.gemspec']
 

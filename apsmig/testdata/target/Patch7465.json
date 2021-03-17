@@ -1,0 +1,84 @@
+{
+  "patchNumber": "7465",
+  "developerBranch": "",
+  "tagNr": 3,
+  "dbPatch": {
+    "dbPatchBranch": "Ms_patch_7465",
+    "prodBranch": "prod",
+    "patchTag": null,
+    "dbObjects": []
+  },
+  "dockerServices": [],
+  "services": [
+    {
+      "serviceName": "it21",
+      "artifactsToPatch": [
+        {
+          "artifactId": "bd-ui",
+          "groupId": "com.affichage.it21.bd",
+          "name": "com.affichage.it21.bd.ui",
+          "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+          "dependencyLevel": 0
+        },
+        {
+          "artifactId": "cm-dao",
+          "groupId": "com.affichage.it21.cm",
+          "name": "com.affichage.it21.cm.dao",
+          "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+          "dependencyLevel": 3
+        },
+        {
+          "artifactId": "cm-ui",
+          "groupId": "com.affichage.it21.cm",
+          "name": "com.affichage.it21.cm.ui",
+          "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+          "dependencyLevel": 0
+        },
+        {
+          "artifactId": "it21-mail-api",
+          "groupId": "com.apgsga.it21",
+          "name": null,
+          "version": "2.2.38",
+          "dependencyLevel": 0
+        }
+      ],
+      "patchTag": "it21_release_9_1_1_admin_uimig_7465_3",
+      "serviceMetaData": {
+        "serviceName": "it21",
+        "revisionPkgName": "it21-ui-pkgs/revision",
+        "bomCoordinates": {
+          "artifactId": "dm-bom",
+          "groupId": "com.affichage.common.maven",
+          "name": "_dm_bom",
+          "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+          "dependencyLevel": 0
+        },
+        "microServiceBranch": "it21_release_9_1_1_admin_uimig",
+        "baseVersionNumber": "9.1.0",
+        "revisionMnemoPart": "ADMIN-UIMIG",
+        "packages": [
+          {
+            "pkgServiceName": "it21-ui",
+            "packagerName": "it21-ui-pkgs/ui",
+            "starterCoordinates": [
+              "com.affichage.it21.ui:it21-ui-runtime",
+              "com.apgsga.it21.ui.mdt:it21ui-app-starter",
+              "com.apgsga.it21.ui.mdt:javaforms-starter",
+              "com.apgsga.it21:lasttests-jfmt",
+              "org.springframework.boot:spring-boot-starter-tomcat",
+              "moyosoft:moyocore_x64:3.0.4:@dll"
+            ]
+          },
+          {
+            "pkgServiceName": "jadas",
+            "packagerName": "it21-ui-pkgs/server",
+            "starterCoordinates": [
+              "com.apgsga.it21.ui.mdt:jadas-app-starter",
+              "com.apgsga.it21.ui.mdt:jadas-framework-starter"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

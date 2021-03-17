@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.metadata["allowed_push_host"] = "https://artifactory4t4apgsga.jfrog.io/artifactory/api/gems/apgGems"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/apgsga-it/artcli.git"
+  spec.metadata["source_code_uri"] = "https://github.com/apgsga-it/apg-ruby-gems.git"
 
   spec.add_dependency 'slop',  '~> 4.8', '>= 4.8.2'
   spec.add_dependency  'highline',  '~> 2.0', '>= 2.0.1'

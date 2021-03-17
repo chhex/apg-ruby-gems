@@ -1,0 +1,60 @@
+{
+  "className": "com.apgsga.microservice.patch.api.impl.PatchBean",
+  "patchNummer": "7464",
+  "serviceName": "It21Ui",
+  "microServiceBranch": "it21_release_9_1_1_admin_uimig",
+  "dbPatchBranch": "patch_7464",
+  "prodBranch": "prod",
+  "patchTag": "patch_7464_3",
+  "developerBranch": "",
+  "tagNr": 3,
+  "installationTarget": "CHEI211",
+  "targetToState": "ProduktionInstallationsbereit",
+  "baseVersionNumber": "9.1.0",
+  "revisionMnemoPart": "ADMIN-UIMIG",
+  "revision": "21239",
+  "lastRevision": "9.1.0.ADMIN-UIMIG-21235",
+  "runningNr": null,
+  "dbObjects": [
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "arep.vk.xml",
+      "filePath": "com.affichage.it21.masterdaten.arep/src/main/sql/",
+      "moduleName": "com.affichage.it21.masterdaten.arep"
+    }
+  ],
+  "mavenArtifacts": [
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.MavenArtifactBean",
+      "artifactId": "dao-vk-domainwerte",
+      "groupId": "com.affichage",
+      "name": "com.affichage.it21.domainwerte.vk",
+      "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+      "dependencyLevel": 0
+    }
+  ],
+  "dockerServices": [],
+  "installDockerServices": false,
+  "installOnEmptyModules": false,
+  "lastPipelineTask": "Notification",
+  "currentTarget": "CHPI211",
+  "currentPipelineTask": "Approve",
+  "logText": "started",
+  "mavenArtifactsToBuild": [
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.MavenArtifactBean",
+      "artifactId": "dao-vk-domainwerte",
+      "groupId": "com.affichage",
+      "name": "com.affichage.it21.domainwerte.vk",
+      "version": "9.1.0.ADMIN-UIMIG-SNAPSHOT",
+      "dependencyLevel": 0
+    }
+  ],
+  "installJadasAndGui": true,
+  "dbObjectsAsVcsPath": [
+    "com.affichage.it21.masterdaten.arep/src/main/sql//arep.vk.xml"
+  ],
+  "mavenArtifactsAsVcsPath": [
+    "com.affichage.it21.domainwerte.vk"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "patchNumber": "7466",
+  "developerBranch": "",
+  "tagNr": 1,
+  "dbPatch": {
+    "dbPatchBranch": "Ms_patch_7466",
+    "prodBranch": "prod",
+    "patchTag": "Ms_patch_7466_1",
+    "dbObjects": [
+      {
+        "fileName": "fm.objekte_f_pa.pkb.sql",
+        "filePath": "com.affichage.it21.fm.sql/src/main/sql/package/",
+        "moduleName": "com.affichage.it21.fm.sql",
+        "hasConflict": false
+      },
+      {
+        "fileName": "fm.objekte_f_pa.pks.sql",
+        "filePath": "com.affichage.it21.fm.sql/src/main/sql/package/",
+        "moduleName": "com.affichage.it21.fm.sql",
+        "hasConflict": false
+      }
+    ]
+  },
+  "dockerServices": [],
+  "services": []
+}

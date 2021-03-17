@@ -1,0 +1,124 @@
+{
+  "className": "com.apgsga.microservice.patch.api.impl.PatchBean",
+  "patchNummer": "7473",
+  "serviceName": "It21Ui",
+  "microServiceBranch": "it21_release_9_1_1_admin_uimig",
+  "dbPatchBranch": "patch_7473",
+  "prodBranch": "prod",
+  "patchTag": "patch_7473_4",
+  "developerBranch": "",
+  "tagNr": 4,
+  "installationTarget": null,
+  "targetToState": "ProduktionInstallationsbereit",
+  "baseVersionNumber": "9.1.0",
+  "revisionMnemoPart": "ADMIN-UIMIG",
+  "revision": "21372",
+  "lastRevision": "9.1.0.ADMIN-UIMIG-21365",
+  "runningNr": null,
+  "dbObjects": [
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ds.ds_dgfx_ifib_feedback_pa.pkb.sql",
+      "filePath": "com.affichage.it21.ds.sql/src/main/sql/package/",
+      "moduleName": "com.affichage.it21.ds.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.install_ifib_ip_flex_error_feedbk_t.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/generated/sql/install/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.cg_ifib_ip_flex_error_feedbk_t.pkb.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/generated/sql/package/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.cg_ifib_ip_flex_error_feedbk_t.pks.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/generated/sql/package/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.ifib_ip_flex_error_feedbk_f.vw.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/generated/sql/view/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.ifib_ip_flex_error_feedbk_v.vw.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/generated/sql/view/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.ifib_drop.drp.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/main/sql/data/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.it_36957_p_7416.drp.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/main/sql/data/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.ifib_dgfx_feedback_pa.pkb.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/main/sql/package/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.ifib_dgfx_feedback_pa.pks.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/main/sql/package/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.ifib_ip_flex_error_feedbk_t.tab.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/main/sql/table/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "ifib.ifib_ip_flex_error_feedback_v.vw.sql",
+      "filePath": "com.affichage.it21.ifib.sql/src/main/sql/view/",
+      "moduleName": "com.affichage.it21.ifib.sql"
+    },
+    {
+      "className": "com.apgsga.microservice.patch.api.impl.DbObjectBean",
+      "fileName": "aenv.it_37064_appl_param.data.load.sql",
+      "filePath": "com.affichage.it21.aenv.sql/src/main/sql/data/",
+      "moduleName": "com.affichage.it21.aenv.sql"
+    }
+  ],
+  "mavenArtifacts": [],
+  "dockerServices": [],
+  "installDockerServices": false,
+  "installOnEmptyModules": false,
+  "lastPipelineTask": "Notification",
+  "currentTarget": "CHPI211",
+  "currentPipelineTask": "Approve",
+  "logText": "started",
+  "mavenArtifactsToBuild": [],
+  "installJadasAndGui": false,
+  "dbObjectsAsVcsPath": [
+    "com.affichage.it21.ds.sql/src/main/sql/package//ds.ds_dgfx_ifib_feedback_pa.pkb.sql",
+    "com.affichage.it21.ifib.sql/src/generated/sql/install//ifib.install_ifib_ip_flex_error_feedbk_t.sql",
+    "com.affichage.it21.ifib.sql/src/generated/sql/package//ifib.cg_ifib_ip_flex_error_feedbk_t.pkb.sql",
+    "com.affichage.it21.ifib.sql/src/generated/sql/package//ifib.cg_ifib_ip_flex_error_feedbk_t.pks.sql",
+    "com.affichage.it21.ifib.sql/src/generated/sql/view//ifib.ifib_ip_flex_error_feedbk_f.vw.sql",
+    "com.affichage.it21.ifib.sql/src/generated/sql/view//ifib.ifib_ip_flex_error_feedbk_v.vw.sql",
+    "com.affichage.it21.ifib.sql/src/main/sql/data//ifib.ifib_drop.drp.sql",
+    "com.affichage.it21.ifib.sql/src/main/sql/data//ifib.it_36957_p_7416.drp.sql",
+    "com.affichage.it21.ifib.sql/src/main/sql/package//ifib.ifib_dgfx_feedback_pa.pkb.sql",
+    "com.affichage.it21.ifib.sql/src/main/sql/package//ifib.ifib_dgfx_feedback_pa.pks.sql",
+    "com.affichage.it21.ifib.sql/src/main/sql/table//ifib.ifib_ip_flex_error_feedbk_t.tab.sql",
+    "com.affichage.it21.ifib.sql/src/main/sql/view//ifib.ifib_ip_flex_error_feedback_v.vw.sql",
+    "com.affichage.it21.aenv.sql/src/main/sql/data//aenv.it_37064_appl_param.data.load.sql"
+  ],
+  "mavenArtifactsAsVcsPath": []
+}

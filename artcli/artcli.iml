@@ -11,14 +11,23 @@
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.1.4, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.4.4, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="filecache (v1.0.2, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="filesize (v0.2.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="highline (v2.0.3, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="pastel (v0.8.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v12.3.3, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec (v3.10.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.10.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.10.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.10.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.10.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-core (v3.10.1, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.10.1, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v3.10.2, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.10.2, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="slop (v4.8.2, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="strings (v0.2.1, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="strings-ansi (v0.2.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tty-color (v0.6.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tty-screen (v0.8.1, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tty-table (v0.12.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v2.0.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicode_utils (v1.4.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
   </component>
   <component name="RakeTasksCache">
     <option name="myRootTask">

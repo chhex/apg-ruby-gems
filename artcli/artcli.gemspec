@@ -21,6 +21,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency  'highline',  '~> 2.0', '>= 2.0.1'
   spec.add_dependency  'artifactory',  '~> 2.3', '>= 2.3.2'
   spec.add_dependency 'apgsecrets'
+  spec.add_dependency 'tty-table'
+  spec.add_dependency 'filesize'
 
   # Specify which files should be added to the gem when it is released.f
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

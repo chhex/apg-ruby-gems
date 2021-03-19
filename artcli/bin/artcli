@@ -44,8 +44,8 @@ end
 
 # Establishment of Preconditions : Entering and Storing Password
 secrets = Secrets::Store.new
-secrets.prompt_only_when_not_exists(opts[:user], 'Enter artifactory password and enter return:')
-
+secrets.prompt_only_when_not_exists(opts[:user], 'Enter artifactory password and enter return:    ')
+puts "\n"
 # Artifactory funcitionality
 command = Artcli::Cli.new(opts[:uri], opts[:user], secrets.retrieve(opts[:user]), opts[:dry])
 if opts[:list_local]
@@ -72,6 +72,7 @@ if opts[:storage_info]
       table << hsh.values
     end
   end
+  puts "Storage Report vom Artifactory, ordered by size"
   puts table.render(:basic)
 end
 puts 'Done.'

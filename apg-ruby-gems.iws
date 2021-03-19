@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Erster Storage Report">
+      <change beforePath="$PROJECT_DIR$/apg-ruby-gems.iws" beforeDir="false" afterPath="$PROJECT_DIR$/apg-ruby-gems.iws" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/piper-patch-mig">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RubyModuleManagerSettings">
+    <option name="blackListedRootsPaths">
+      <list>
+        <option value="$PROJECT_DIR$" />
+        <option value="$PROJECT_DIR$/apscli" />
+      </list>
+    </option>
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="" />
+      <created>1614780694539</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1614780694539</updated>
+      <workItem from="1614780697299" duration="438000" />
+      <workItem from="1615372129782" duration="16767000" />
+      <workItem from="1615449297588" duration="112000" />
+      <workItem from="1615449445596" duration="20634000" />
+      <workItem from="1615902406268" duration="368000" />
+      <workItem from="1615954180092" duration="3679000" />
+      <workItem from="1615974797779" duration="613000" />
+      <workItem from="1616052096280" duration="432000" />
+      <workItem from="1616054353917" duration="460000" />
+      <workItem from="1616145874078" duration="15692000" />
+      <workItem from="1616170240725" duration="111000" />
+    </task>
+    <task id="LOCAL-00001" summary="Bumped new version of apg-patch-cli-fat.jar">
+      <created>1614781000865</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1614781000865</updated>
+    </task>
+    <task id="LOCAL-00002" summary="First Iteration Patch Json Migration for Multiservice_cm">
+      <created>1615390042512</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615390042512</updated>
+    </task>
+    <task id="LOCAL-00003" summary="First Iteration Patch Json Migration for Multiservice_cm">
+      <created>1615391778879</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615391778879</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Info stuff">
+      <created>1615392184332</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615392184332</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fix wrong update">
+      <created>1615392282590</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615392282590</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fix Intellij Files">
+      <created>1615392785629</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615392785629</updated>
+    </task>
+    <task id="LOCAL-00007" summary="More detailed tests and Migration classes">
+      <created>1615454946178</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615454946179</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Directory processing">
+      <created>1615476243591</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615476243591</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Logging">
+      <created>1615476348977</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615476348977</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Spinner logging enhancement">
+      <created>1615477398450</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615477398450</updated>
+    </task>
+    <task id="LOCAL-00011" summary="README.MD">
+      <created>1615477650825</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615477650825</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Erster Storage Report">
+      <created>1616169387820</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1616169387820</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/apg_ruby_gems@Apsmig_Patch_7465_migrated____.rcov" NAME="Apsmig Patch 7465 migrated ... Coverage Results" MODIFIED="1615464664974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apsmig" MODULE_NAME="apsmig" />
+    <SUITE FILE_PATH="coverage/apg_ruby_gems@Apsmig_Migrate_all_file_in____.rcov" NAME="Apsmig Migrate all file in ... Coverage Results" MODIFIED="1615474727277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apsmig" MODULE_NAME="apsmig" />
+    <SUITE FILE_PATH="coverage/apg_ruby_gems@Apsmig.rcov" NAME="Apsmig Coverage Results" MODIFIED="1615475025352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apsmig" MODULE_NAME="apsmig" />
+  </component>
+</project>

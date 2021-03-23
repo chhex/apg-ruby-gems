@@ -14,6 +14,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata["allowed_push_host"] = "https://artifactory4t4apgsga.jfrog.io/artifactory/api/gems/apgGems"
 
+
   spec.metadata["homepage_uri"] = spec.homepage
   spec.metadata["source_code_uri"] = "https://github.com/apgsga-it/apg-ruby-gems.git"
 
@@ -23,6 +24,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'apgsecrets'
   spec.add_dependency 'tty-table'
   spec.add_dependency 'filesize'
+  spec.add_dependency 'tty-spinner'
+  spec.add_dependency 'tty-progressbar'
 
   # Specify which files should be added to the gem when it is released.f
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.

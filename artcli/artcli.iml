@@ -3,7 +3,7 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="rbenv: jruby-9.2.11.1" jdkType="JRUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="apgsecrets (v0.3.1, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="artifactory (v2.8.2, rbenv: jruby-9.2.11.1) [gem]" level="application" />
@@ -24,7 +24,10 @@
     <orderEntry type="library" scope="PROVIDED" name="strings (v0.2.1, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="strings-ansi (v0.2.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tty-color (v0.6.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tty-cursor (v0.7.1, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tty-progressbar (v0.18.2, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tty-screen (v0.8.1, rbenv: jruby-9.2.11.1) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="tty-spinner (v0.9.3, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tty-table (v0.12.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v2.0.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="unicode_utils (v1.4.0, rbenv: jruby-9.2.11.1) [gem]" level="application" />
@@ -33,16 +36,16 @@
     <option name="myRootTask">
       <RakeTaskImpl id="rake">
         <subtasks>
-          <RakeTaskImpl description="Build artcli-1.0.0.gem into the pkg directory" fullCommand="build" id="build" />
+          <RakeTaskImpl description="Build artcli-1.0.1.gem into the pkg directory" fullCommand="build" id="build" />
           <RakeTaskImpl description="Remove any temporary products" fullCommand="clean" id="clean" />
           <RakeTaskImpl description="Remove any generated files" fullCommand="clobber" id="clobber" />
-          <RakeTaskImpl description="Build and install artcli-1.0.0.gem into system gems" fullCommand="install" id="install" />
+          <RakeTaskImpl description="Build and install artcli-1.0.1.gem into system gems" fullCommand="install" id="install" />
           <RakeTaskImpl id="install">
             <subtasks>
-              <RakeTaskImpl description="Build and install artcli-1.0.0.gem into system gems without network access" fullCommand="install:local" id="local" />
+              <RakeTaskImpl description="Build and install artcli-1.0.1.gem into system gems without network access" fullCommand="install:local" id="local" />
             </subtasks>
           </RakeTaskImpl>
-          <RakeTaskImpl description="Create tag v1.0.0 and build and push artcli-1.0.0.gem to https://artifactory4t4apgsga.jfrog.io/artifactory/api/gems/apgGems" fullCommand="release[remote]" id="release[remote]" />
+          <RakeTaskImpl description="Create tag v1.0.1 and build and push artcli-1.0.1.gem to https://artifactory4t4apgsga.jfrog.io/artifactory/api/gems/apgGems" fullCommand="release[remote]" id="release[remote]" />
           <RakeTaskImpl description="Run RSpec code examples" fullCommand="spec" id="spec" />
           <RakeTaskImpl description="" fullCommand="default" id="default" />
           <RakeTaskImpl description="" fullCommand="release" id="release" />

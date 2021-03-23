@@ -5,9 +5,9 @@ require 'json'
 require 'artcli'
 require 'pp'
 require 'apgsecrets'
-require 'tty-table'
 require 'filesize'
-
+require 'tty-spinner'
+require "csv"
 
 def help(opts)
   puts "A Command Line Tool for interacting with Artifactory, Version: #{Artcli::VERSION} "
@@ -21,10 +21,13 @@ opts = Slop.parse do |o|
   o.string '-u', '--user', 'Admin user for artifactory operations, will be prompted for the password'
   o.string '-r', '--uri', 'Base Artifactory URI, without https:// prefix. Default : artifactory4t4apgsga.jfrog.io/artifactory', default: 'artifactory4t4apgsga.jfrog.io/artifactory'
   o.string '-lr', '--list_local' , 'List Local Repositories matching a optional filter', default:  nil
-  o.string '-la', '--list_artifacts' , 'List all artifacts of a local repository filter, parameter : repository'
+  o.string '-ar', '--artifacts_report' , 'Csv report of all artifacts of a local repository, parameter : repository'
   o.string '-dl', '--delete_local' , 'Delete content of  Local Repositories matching optional filter interactively', default: nil
-  o.bool '-si', '--storage_info' , 'Storage Info of a repositories', default: false
-  o.bool '-p' , '--password', 'Force prompt for password, normally password will be cached encrypted ', default: false
+  o.bool '-sr', '--storage_info_report' , 'Csv storage info report of all repositories', default: false
+  o.string '-si', '--storage_info' , 'Storage Info for a repository', default: nil
+  o.string '-o', '--output', 'Output file for csv report output', default: 'report.csv'
+  o.string '-s', '--separator', 'Column separator to use for writing csv reports', default: ','
+  o.bool '-f' , '--force', 'Force prompt for password, normally password will be cached encrypted ', default: false
   o.on '-h', '--help' do
     help(o)
     exit
@@ -44,9 +47,9 @@ end
 
 # Establishment of Preconditions : Entering and Storing Password
 secrets = Secrets::Store.new
-secrets.prompt_only_when_not_exists(opts[:user], 'Enter artifactory password and enter return:    ')
+secrets.prompt_only_when_not_exists(opts[:user], 'Enter artifactory password and enter return:    ',opts[:force])
 puts "\n"
-# Artifactory funcitionality
+# Artifactory functionality
 command = Artcli::Cli.new(opts[:uri], opts[:user], secrets.retrieve(opts[:user]), opts[:dry])
 if opts[:list_local]
   puts "Filtered Local Repositories for #{opts[:uri]} with filter: #{opts[:list_local]} "
@@ -55,24 +58,17 @@ end
 if opts[:delete_local]
   command.clean_repositories_interactive(opts[:delete_local])
 end
-if opts[:list_artifacts]
-  command.list_artifacts(opts[:list_artifacts])
+if opts[:artifacts_report]
+  report = Artcli::CsvReport.new(command,opts[:output],opts[:separator])
+  report.artifacts_report(opts[:artifacts_report])
+end
+if opts[:storage_info_report]
+  report = Artcli::CsvReport.new(command,opts[:output],opts[:separator])
+  report.storage_info_report
 end
 if opts[:storage_info]
-  result = command.get_storage_info
-  data = result['repositoriesSummaryList']
-  sorted_data = data.sort_by { |hsh| if hsh["usedSpace"] == '0 bytes'
-                                        -1
-                                      else
-                                        Filesize.from(hsh["usedSpace"]).to_i
-                                      end}.reverse
-  table = TTY::Table.new()
-  sorted_data.each do |hsh|
-    if hsh['repoKey'] != 'TOTAL'
-      table << hsh.values
-    end
-  end
-  puts "Storage Report vom Artifactory, ordered by size"
-  puts table.render(:basic)
+  data = command.get_storage_info(opts[:storage_info])
+  puts "Storage info for #{opts[:storage_info]}: "
+  puts data
 end
 puts 'Done.'

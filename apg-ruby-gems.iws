@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Erster Storage Report">
+    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Bumped Version">
       <change beforePath="$PROJECT_DIR$/apg-ruby-gems.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/apg-ruby-gems.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apg-ruby-gems.iws" beforeDir="false" afterPath="$PROJECT_DIR$/apg-ruby-gems.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcli/artcli.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcli/artcli.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/artcli.gemspec" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcli/artcli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/artcli.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artcli/bin/artcli" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/bin/artcli" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/artcli/lib/artcli/artifactory_cli.rb" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/lib/artcli/artifactory_cli.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +21,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1pz5MDxHB0DnyJZAyq0Vhtbnw4g" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -37,7 +47,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -70,7 +80,8 @@
       <workItem from="1616054353917" duration="460000" />
       <workItem from="1616145874078" duration="15692000" />
       <workItem from="1616170240725" duration="2666000" />
-      <workItem from="1616173042741" duration="535000" />
+      <workItem from="1616173042741" duration="1712000" />
+      <workItem from="1616484273197" duration="21101000" />
     </task>
     <task id="LOCAL-00001" summary="Bumped new version of apg-patch-cli-fat.jar">
       <created>1614781000865</created>
@@ -156,7 +167,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616169387820</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Erster Storage Report">
+      <created>1616173647325</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1616173647325</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Bumped Version">
+      <created>1616173715320</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1616173715320</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,5 +198,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Erster Storage Report" />
+    <MESSAGE value="Bumped Version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bumped Version" />
   </component>
 </project>

@@ -3,6 +3,7 @@
 module Artcli
   require 'artifactory'
   require 'tty-progressbar'
+  require 'highline'
   class Cli
     attr_reader :art_client, :dry_run
 
@@ -38,7 +39,56 @@ module Artcli
       filtered_repos
     end
 
+    def list_items_by_version(repo, versions, type = "file")
+      versionMatchers = ""
+      versions.each_with_index do |version,index|
+        separator = index < versions.size - 1 ? "," : ""
+        versionMatcher = (<<~V)
+            {"name": {"$match": "*#{version}*"}}#{separator}
+V
+        versionMatchers += versionMatcher
+      end
+      data = (<<~AQL)
+        items.find(
+         {
+            "$and": [
+              {
+                "repo": "#{repo}"
+              },
+              {
+                "type": "#{type}"
+              },
+              {
+                "$or":[
+                  #{versionMatchers}
+                ]
+              }
+            ]
+          }
+        )
+      AQL
+      @art_client.post('/api/search/aql',data, {"content-type" => "text/plain"} )
+    end
 
+    def delete_version_items_interactively(repo, version,type = "file")
+      result = list_items_by_version(repo, version, type)
+      items_to_delete = []
+      result['results'].each do |item|
+        item_tod = "#{@base_uri}/#{repo}/#{item['path']}/#{item['name']}"
+        items_to_delete << item_tod
+      end
+      puts "The following storage uri's have been selected to be cleaned:"
+      items_to_delete.each do |item|
+        puts item
+      end
+      cli = HighLine.new
+      ok = cli.ask('Ok to proceed y/n: ') { |q| q.validate = /(y|n)/ }
+      if ok != 'y'
+        puts 'Processing is being terminated'
+        exit
+      end
+     clean_repositories(items_to_delete,true)
+    end
 
     def list_artifacts_recursive(parent_path, output,progress)
       progress.advance
@@ -106,13 +156,16 @@ module Artcli
       puts "Filtered Local Repositories with filter: #{user_filter} "
       selected_repos = list_repositories(user_filter)
       puts "The following repos have been selected to be cleaned: #{selected_repos}"
-      ok = ask('Ok to proceed y/n: ')
+      cli = HighLine.new
+      ok = cli.ask('Ok to proceed y/n: ') { |q| q.validate = /(y|n)/ }
       if ok != 'y'
-        puts 'Processing is beeing terminated'
+        puts 'Processing is being terminated'
         exit
       end
       storage_uris_to_deleted = list_storage_uris_first_level(selected_repos)
       puts "The following storage uri's have been selected to be cleaned: #{storage_uris_to_deleted}"
+      cli = HighLine.new
+      ok = cli.ask('Ok to proceed y/n: ') { |q| q.validate = /(y|n)/ }
       ok = ask('Ok to proceed y/n: ')
       if ok != 'y'
         puts 'Processing is being terminated'

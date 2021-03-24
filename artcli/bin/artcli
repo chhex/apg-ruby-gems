@@ -18,11 +18,17 @@ opts = Slop.parse do |o|
   o.bool '-y', '--dry', 'Dry run, not executing the commands', default: false
   o.string '-u', '--user', 'Admin user for artifactory operations, will be prompted for the password'
   o.string '-r', '--uri', 'Base Artifactory URI, without https:// prefix. Default : artifactory4t4apgsga.jfrog.io/artifactory', default: 'artifactory4t4apgsga.jfrog.io/artifactory'
-  o.string '-lr', '--list_local' , 'List Local Repositories matching a optional filter', default:  nil
-  o.string '-ar', '--artifacts_report' , 'Csv report of all artifacts of a local repository, parameter : repository'
-  o.string '-dl', '--delete_local' , 'Delete content of  Local Repositories matching optional filter interactively', default: nil
-  o.bool '-sr', '--storage_info_report' , 'Csv storage info report of all repositories', default: false
-  o.string '-si', '--storage_info' , 'Storage Info for a repository', default: nil
+  o.string '-lr', '--listRepos' , 'List Local Repositories matching a optional filter', default:  nil
+  o.string '-ar', '--artifactsReport' , 'Csv report of all artifacts of a local repository, parameter : repository'
+  o.string '-lv', '--listVersions' , 'List all artifacts of a repository , which match a number of version filters (-v) and optional type parameter (-t), parameter: repository'
+  o.string '-dv', '--deleteVersions' , 'Delete artifacts Versions of a repository, which match a number of version filters (-v) and optional type parameter (-t), parameter: repository'
+  o.string '-er', '--emptyLocalRepo' , 'Empty repo = deleted all repo folders Local Repositories matching optional filter interactively', default: nil
+  o.bool '-sr', '--storageReport' , 'Csv storage info report of all repositories', default: false
+  o.string '-si', '--storageInfo' , 'Storage Info for a repository', default: nil
+  o.separator ''
+  o.separator 'additional supporting options:'
+  o.array '-v', '--versions', "List of comma seperated version filters for aql queries"
+  o.string '-t', '--itemType' , 'Item type for aql queries, can have to value <file>,<folder> or <any>', default: 'folder'
   o.string '-o', '--output', 'Output file for csv report output', default: 'report.csv'
   o.string '-s', '--separator', 'Column separator to use for writing csv reports', default: ','
   o.bool '-f' , '--force', 'Force prompt for password, normally password will be cached encrypted ', default: false
@@ -37,11 +43,6 @@ unless opts[:user]
   puts 'Error: Artifactory Admin user must be specified with -u or --user'
   exit
 end
-if !opts[:list_local] and opts[:deletelocal]
-  help(opts)
-  puts 'Error: At least one operation must be selected'
-  exit
-end
 
 # Establishment of Preconditions : Entering and Storing Password
 secrets = Secrets::Store.new
@@ -49,24 +50,40 @@ secrets.prompt_only_when_not_exists(opts[:user], 'Enter artifactory password and
 puts "\n"
 # Artifactory functionality
 command = Artcli::Cli.new(opts[:uri], opts[:user], secrets.retrieve(opts[:user]), opts[:dry])
-if opts[:list_local]
-  puts "Filtered Local Repositories for #{opts[:uri]} with filter: #{opts[:list_local]} "
-  pp command.list_repositories(opts[:list_local])
+if opts[:listRepos]
+  puts "Filtered Local Repositories for #{opts[:uri]} with filter: #{opts[:listRepos]} "
+  pp command.list_repositories(opts[:listRepos])
 end
-if opts[:delete_local]
-  command.clean_repositories_interactive(opts[:delete_local])
+if opts[:emptyLocalRepo]
+  command.clean_repositories_interactive(opts[:emptyLocalRepo])
 end
-if opts[:artifacts_report]
+if opts[:listVersions]
+  if opts[:versions].empty?
+    help(opts)
+    puts 'List artifact versions requires the --version <filter><,filter>..., with 1 to n versions filters'
+    exit
+  end
+  pp command.list_items_by_version(opts[:listVersions], opts[:versions], opts[:itemType] )
+end
+if opts[:deleteVersions]
+  if opts[:versions].empty?
+    help(opts)
+    puts 'Delete artifact versions requires the --version <filter><,filter>..., with 1 to n versions filters'
+    exit
+  end
+  command.delete_version_items_interactively(opts[:deleteVersions], opts[:versions], opts[:itemType] )
+end
+if opts[:artifactsReport]
   report = Artcli::CsvReport.new(command,opts[:output],opts[:separator])
-  report.artifacts_report(opts[:artifacts_report])
+  report.artifacts_report(opts[:artifactsReport])
 end
-if opts[:storage_info_report]
+if opts[:storageReport]
   report = Artcli::CsvReport.new(command,opts[:output],opts[:separator])
   report.storage_info_report
 end
-if opts[:storage_info]
-  data = command.get_storage_info(opts[:storage_info])
-  puts "Storage info for #{opts[:storage_info]}: "
+if opts[:storageInfo]
+  data = command.get_storage_info(opts[:storageInfo])
+  puts "Storage info for #{opts[:storageInfo]}: "
   puts data
 end
 puts 'Done.'

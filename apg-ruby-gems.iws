@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Artifactory Reports">
+      <change afterPath="$PROJECT_DIR$/artcli/regex.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apg-ruby-gems.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/apg-ruby-gems.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apg-ruby-gems.iws" beforeDir="false" afterPath="$PROJECT_DIR$/apg-ruby-gems.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apgsecrets/apgsecrets.iml" beforeDir="false" afterPath="$PROJECT_DIR$/apgsecrets/apgsecrets.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artcli/bin/artcli" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/bin/artcli" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artcli/lib/artcli/artifactory_cli.rb" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/lib/artcli/artifactory_cli.rb" afterDir="false" />
     </list>
@@ -81,7 +84,7 @@
       <workItem from="1616173042741" duration="1712000" />
       <workItem from="1616484273197" duration="22021000" />
       <workItem from="1616526952582" duration="1084000" />
-      <workItem from="1616571688098" duration="11745000" />
+      <workItem from="1616571688098" duration="28083000" />
     </task>
     <task id="LOCAL-00001" summary="Bumped new version of apg-patch-cli-fat.jar">
       <created>1614781000865</created>
@@ -188,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616513006609</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Artifactory Reports">
+      <created>1616595071677</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1616595071677</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,5 +221,19 @@
     <MESSAGE value="Bumped Version" />
     <MESSAGE value="Artifactory Reports" />
     <option name="LAST_COMMIT_MESSAGE" value="Artifactory Reports" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$USER_HOME$/.rbenv/versions/jruby-9.2.11.1/lib/ruby/gems/shared/gems/artifactory-2.8.2/lib/artifactory/client.rb</url>
+          <line>393</line>
+          <properties myBlockOrdinal="-1">
+            <option name="block-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

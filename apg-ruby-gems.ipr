@@ -80,6 +80,7 @@
   </component>
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/apgsecrets/apgsecrets.iml" filepath="$PROJECT_DIR$/apgsecrets/apgsecrets.iml" />
       <module fileurl="file://$PROJECT_DIR$/apsmig/apsmig.iml" filepath="$PROJECT_DIR$/apsmig/apsmig.iml" />
       <module fileurl="file://$PROJECT_DIR$/artcli/artcli.iml" filepath="$PROJECT_DIR$/artcli/artcli.iml" />
     </modules>

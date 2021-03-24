@@ -12,8 +12,6 @@ require "csv"
 def help(opts)
   puts "A Command Line Tool for interacting with Artifactory, Version: #{Artcli::VERSION} "
   puts opts
-  puts 'The parameters --user --password and --url need to be be before the functional parameters with arguments.'
-  puts 'Example: apscli -u xxx -p -l yum'
 end
 
 opts = Slop.parse do |o|
@@ -36,7 +34,7 @@ end
 # Test Preconditions
 unless opts[:user]
   help(opts)
-  puts 'Error: Artifactory Admin user must be specificed with -u or --user'
+  puts 'Error: Artifactory Admin user must be specified with -u or --user'
   exit
 end
 if !opts[:list_local] and opts[:deletelocal]

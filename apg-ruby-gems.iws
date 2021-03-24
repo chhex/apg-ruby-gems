@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Bumped Version">
-      <change beforePath="$PROJECT_DIR$/apg-ruby-gems.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/apg-ruby-gems.ipr" afterDir="false" />
+    <list default="true" id="7455dc73-00cc-43c3-bc93-07e6b172d116" name="Default Changelist" comment="Artifactory Reports">
       <change beforePath="$PROJECT_DIR$/apg-ruby-gems.iws" beforeDir="false" afterPath="$PROJECT_DIR$/apg-ruby-gems.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcli/artcli.gemspec" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/artcli.gemspec" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artcli/artcli.iml" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/artcli.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artcli/bin/artcli" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/bin/artcli" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artcli/lib/artcli/artifactory_cli.rb" beforeDir="false" afterPath="$PROJECT_DIR$/artcli/lib/artcli/artifactory_cli.rb" afterDir="false" />
     </list>
@@ -50,6 +47,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RubyModuleManagerSettings">
     <option name="blackListedRootsPaths">
@@ -81,7 +79,9 @@
       <workItem from="1616145874078" duration="15692000" />
       <workItem from="1616170240725" duration="2666000" />
       <workItem from="1616173042741" duration="1712000" />
-      <workItem from="1616484273197" duration="21101000" />
+      <workItem from="1616484273197" duration="22021000" />
+      <workItem from="1616526952582" duration="1084000" />
+      <workItem from="1616571688098" duration="11745000" />
     </task>
     <task id="LOCAL-00001" summary="Bumped new version of apg-patch-cli-fat.jar">
       <created>1614781000865</created>
@@ -181,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616173715320</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Artifactory Reports">
+      <created>1616513006608</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1616513006609</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +209,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Erster Storage Report" />
     <MESSAGE value="Bumped Version" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bumped Version" />
+    <MESSAGE value="Artifactory Reports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Artifactory Reports" />
   </component>
 </project>

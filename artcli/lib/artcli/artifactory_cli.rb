@@ -55,14 +55,17 @@ module Artcli
     end
 
     def details_artifact(path, output)
-
       detail = @art_client.get(path)
+      mime_typ = detail['mimeType']
+      if (mime_typ != "application/java-archive" and mime_typ != "application/x-maven-pom+xml")
+        return
+      end
       parts = detail['path'].split("/")
       file_name = parts.pop
-      version = parts.pop
+      version = "\"#{parts.pop}\""
       artifact_id = parts.pop
       group_id = parts.join(".")
-      output << [group_id, artifact_id, version, file_name, detail['path'], detail['lastUpdated'], detail['size'], detail['mimeType']]
+      output << [group_id, artifact_id, version, file_name, detail['path'], detail['lastUpdated'], detail['size'], mime_typ]
     end
 
     def list_storage_uris_first_level(repositories = [])
@@ -130,9 +133,9 @@ module Artcli
       data = @art_cli.get_storage_info(repository)
       total = data['foldersCount'] + data['filesCount']
       puts "About to process #{total} Artifactory items (folders, artifacts) of repository : #{repository}. The output is written to #{@output_file_name} "
-      progress = TTY::ProgressBar.new("Progress: [:bar] :current/:total :percent ET::elapsed ETA::eta :rate/s", total: total, bar_format: :box, incomplete: " ")
+      progress = TTY::ProgressBar.new("Progress: [:bar] :current/:total :percent ET::elapsed ETA::eta :rate/s", total: total, bar_format: :asterisk, incomplete: " ")
       CSV.open(@output_file_name, "w", col_sep: @col_sep) do |csv|
-        csv << %w[group_id artifact_id version path lastUpdated size mimeType]
+        csv << %w[group_id artifact_id version file path lastUpdated size mimeType]
         @art_cli.list_artifacts_recursive("/api/storage/#{repository}",csv,progress)
       end
     end

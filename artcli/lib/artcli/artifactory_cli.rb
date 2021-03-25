@@ -10,6 +10,7 @@ module Artcli
     def initialize(base_uri, user, passwd, dry_run = false)
       @dry_run = dry_run
       @art_client = Artifactory::Client.new(endpoint:  "https://#{base_uri}", username: user, password: passwd)
+      puts "\nRunning in mode dry_run <#{@dry_run}> , with user: <#{user}> and endpoint: <https://#{base_uri}>"
     end
 
     def get_storage_info_all
@@ -87,7 +88,7 @@ V
         puts 'Processing is being terminated'
         exit
       end
-     clean_repositories(items_to_delete,true)
+     clean_repositories(items_to_delete)
     end
 
     def list_artifacts_recursive(parent_path, output,progress)
@@ -136,13 +137,13 @@ V
       storage_uris
     end
 
-    def clean_repositories(storage_uris = [], dry_run = false)
+    def clean_repositories(storage_uris = [])
       if storage_uris.empty?
         puts 'Nothing to clean, filtered repositories empty'
         return
       end
       storage_uris.each do |uri|
-        if !dry_run
+        if !@dry_run
           puts "#{uri} will be deleted"
           @art_client.delete(uri.to_s)
           puts 'done'
@@ -166,7 +167,6 @@ V
       puts "The following storage uri's have been selected to be cleaned: #{storage_uris_to_deleted}"
       cli = HighLine.new
       ok = cli.ask('Ok to proceed y/n: ') { |q| q.validate = /(y|n)/ }
-      ok = ask('Ok to proceed y/n: ')
       if ok != 'y'
         puts 'Processing is being terminated'
         exit

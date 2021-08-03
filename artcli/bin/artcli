@@ -32,8 +32,7 @@ opts = Slop.parse do |o|
   o.string '-s', '--separator', 'Column separator to use for writing csv reports', default: ','
   o.string '-i', '--uri', 'Base Artifactory URI, without https:// prefix. Default : artifactory4t4apgsga.jfrog.io/artifactory', default: 'artifactory4t4apgsga.jfrog.io/artifactory'
   o.bool '-f' , '--force', 'Force prompt for password, normally password will be cached encrypted ', default: false
-  o.bool '-d' , '--dry', 'The operations , which change something, will only be simulated', default: true
-
+  o.bool '-d' , '--dry', 'The operations , which change something, will only be simulated', default: false
   o.on '-h', '--help' do
     help(o)
     exit
